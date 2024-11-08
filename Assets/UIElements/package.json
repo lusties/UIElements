@@ -1,0 +1,12 @@
+{
+  "name": "com.lustie.uielements",
+  "version": "1.0.0",
+  "displayName": "UIElements",
+  "description": "Unity Editor UIElements",
+  "unity": "2022.3",
+  "author": {
+    "name": "Lustie",
+    "email": "lustie@gmail.com",
+    "url": "https://www.unity3d.com"
+  }
+}
