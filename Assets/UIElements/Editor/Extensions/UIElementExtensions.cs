@@ -15,5 +15,13 @@ namespace Lustie.UIElements
             return element;
         }
         #endregion
+
+        public static T1 Append<T1, T2>(this T1 element, T2 child)
+            where T1 : VisualElement
+            where T2 : VisualElement
+        {
+            element.Add(child);
+            return element;
+        }
     }
 }

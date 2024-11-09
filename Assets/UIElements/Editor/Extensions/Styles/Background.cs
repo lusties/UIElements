@@ -7,14 +7,14 @@ namespace Lustie.UIElements
     {
         #region ---------------Background---------------
 
-        public static T SetBg<T>(this T element, Texture2D image)
+        public static T BgImage<T>(this T element, Texture2D image)
             where T : VisualElement
         {
-            element.style.SetBg(image);
+            element.style.BgImage(image);
             return element;
         }
         
-        public static IStyle SetBg(this IStyle style, Texture2D image)
+        public static IStyle BgImage(this IStyle style, Texture2D image)
         {
             style.backgroundImage = image;
             return style;
@@ -23,14 +23,14 @@ namespace Lustie.UIElements
         #endregion
 
         #region ---------------Background Color---------------
-        public static T SetBgColor<T>(this T element, Color color)
+        public static T BgColor<T>(this T element, Color color)
             where T : VisualElement
         {
-            element.style.SetBgColor(color);
+            element.style.BgColor(color);
             return element;
         }
 
-        public static IStyle SetBgColor(this IStyle style, Color color)
+        public static IStyle BgColor(this IStyle style, Color color)
         {
             style.backgroundColor = color;
             return style;
