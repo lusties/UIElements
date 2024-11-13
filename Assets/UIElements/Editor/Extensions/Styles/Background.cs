@@ -3,7 +3,7 @@ using UnityEngine.UIElements;
 
 namespace Lustie.UIElements
 {
-    public static partial class UIElementExtensions
+    public static partial class StyleExtensions
     {
         #region ---------------Background---------------
 
@@ -11,6 +11,13 @@ namespace Lustie.UIElements
             where T : VisualElement
         {
             element.style.BgImage(image);
+            return element;
+        }
+        
+        public static T BgImage<T>(this T element, Texture image)
+            where T : VisualElement
+        {
+            element.style.BgImage(image as Texture2D);
             return element;
         }
         

@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Lustie.UIElements
 {
-    public static partial class UIElementExtensions
+    public static partial class StyleExtensions
     {
         #region ---------------Font Size---------------
         public static T FontSize<T>(this T element, float size, LengthUnit unit = LengthUnit.Pixel)
@@ -64,6 +64,34 @@ namespace Lustie.UIElements
         public static IStyle FontColor(this IStyle style, Color color)
         {
             style.color = new StyleColor(color);
+            return style;
+        }
+        
+        public static T Color<T>(this T element, Color color)
+            where T : VisualElement
+        {
+            element.style.Color(color);
+            return element;
+        }
+
+        public static IStyle Color(this IStyle style, Color color)
+        {
+            style.color = new StyleColor(color);
+            return style;
+        }
+        #endregion
+        
+        #region ---------------Unity Text Align---------------
+        public static T TextAlign<T>(this T element, TextAnchor textAnchor)
+            where T : VisualElement
+        {
+            element.style.TextAlign(textAnchor);
+            return element;
+        }
+
+        public static IStyle TextAlign(this IStyle style, TextAnchor textAnchor)
+        {
+            style.unityTextAlign = new StyleEnum<TextAnchor>(textAnchor);
             return style;
         }
         #endregion

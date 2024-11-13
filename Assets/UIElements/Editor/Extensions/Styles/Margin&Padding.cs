@@ -2,7 +2,7 @@ using UnityEngine.UIElements;
 
 namespace Lustie.UIElements
 {
-    public static partial class UIElementExtensions
+    public static partial class StyleExtensions
     {
         #region ---------------Margin---------------
 

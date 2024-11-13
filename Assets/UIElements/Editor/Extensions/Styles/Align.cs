@@ -2,7 +2,7 @@
 
 namespace Lustie.UIElements
 {
-    public static partial class UIElementExtensions
+    public static partial class StyleExtensions
     {
         public static T AlignSelf<T>(this T element, Align align) where T : VisualElement
         {
