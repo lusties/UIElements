@@ -3,7 +3,7 @@ using UnityEngine.UIElements;
 
 namespace Lustie.UIElements
 {
-    internal class FoldoutHeader : VisualElement, INotifyValueChanged<bool>
+    public class FoldoutHeader : VisualElement, INotifyValueChanged<bool>
     {
         public VisualElement headerContainer { get; protected set; }
         public VisualElement headerIcon { get; protected set; }
