@@ -33,7 +33,7 @@ namespace Lustie.UIElements
         {
             Show<T>((position + additionalSpace), editorPos);
         }
-
+        
         protected virtual Vector2 GetWindowSize() => new Vector2(250, 140);
 
         protected virtual void CreateGUI()

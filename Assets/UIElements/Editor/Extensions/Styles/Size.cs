@@ -4,6 +4,13 @@ namespace Lustie.UIElements
 {
     public static partial class StyleExtensions
     {
+        public static T Size<T>(this T element, float value, LengthUnit unit = LengthUnit.Pixel)
+            where T: VisualElement
+        {
+            element.style.Size(value, value, unit);
+            return element;
+        }
+        
         public static T Size<T>(this T element, float? width, float? height, LengthUnit unit = LengthUnit.Pixel)
             where T: VisualElement
         {

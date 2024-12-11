@@ -51,6 +51,15 @@ namespace Lustie.UIElements
             style.unityFontDefinition = FontDefinition.FromSDFFont(sdf_FontAsset);
             return style;
         }
+
+        public static IStyle FontDefResource(this IStyle style, string fontName)
+        {
+            FontAsset sdf_FontAsset = Resources.Load<FontAsset>("FontAssets/" + fontName);
+            style.unityFontDefinition = FontDefinition.FromSDFFont(sdf_FontAsset);
+            
+            return style;
+        }
+        
         #endregion
         
         #region ---------------Font Color---------------
